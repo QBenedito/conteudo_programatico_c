@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Curso de Programação em C</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #666;
+        }
+
+        ul {
+            margin-bottom: 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para as abas */
+        .tab {
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Estilo para o conteúdo das abas */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Introdução à Programação em Linguagem C</h1>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Content')">Conteúdo</button>
+            <button class="tablinks" onclick="openTab(event, 'Tools')">Ferramentas de Estudo</button>
+            <button class="tablinks" onclick="openTab(event, 'Online')">Consultas Online</button>
+            <button class="tablinks" onclick="openTab(event, 'Exercises')">Exercícios</button>
+        </div>
+
+        <div id="Content" class="tabcontent">
+            <h2>Módulo 1: Introdução à Linguagem C</h2>
+            <ul>
+                <li>1.1 História e importância da linguagem C</li>
+                <li>1.2 Instalação do ambiente de programação</li>
+                <li>1.3 Estrutura básica de um programa em C</li>
+                <li>1.4 Estrutura básica de um programa em C</li>
+                <li>1.5 Estrutura básica de um programa em C</li>
+            </ul>
+
+            <h2>Módulo 2: Controle de Fluxo</h2>
+            <ul>
+                <li>2.1 Comandos de decisão (if, else if, switch)</li>
+                <li>2.2 Comandos de repetição (for, while, do-while)</li>
+                <li>2.3 Break e continue</li>
+            </ul>
+
+            <h2>Módulo 3: Funções e Escopo de Variáveis</h2>
+            <ul>
+                <li>3.1 Definição de funções</li>
+                <li>3.2 Parâmetros e argumentos</li>
+                <li>3.3 Retorno de funções</li>
+                <li>3.4 Escopo de variáveis</li>
+                <li>3.5 Funções recursivas</li>
+            </ul>
+
+            <h2>Módulo 4: Arrays, Strings e Ponteiros</h2>
+            <ul>
+                <li>4.1 Definição e uso de arrays</li>
+                <li>4.2 Strings e a biblioteca <string.h>
+                </li>
+                <li>4.3 Introdução a ponteiros</li>
+                <li>4.4 Ponteiros e arrays</li>
+                <li>4.5 Ponteiros e funções</li>
+            </ul>
+
+            <h2>Módulo 5: Estruturas</h2>
+            <ul>
+                <li>5.1 Definição de estruturas</li>
+                <li>5.2 Uso de estruturas</li>
+                <li>5.3 Estruturas e funções</li>
+            </ul>
+
+            <h2>Módulo 6: Tópicos Avançados</h2>
+            <ul>
+                <li>6.1 Técnicas avançadas de debug</li>
+                <li>6.2 Utilizando ChatGPT para solução de problemas e correção de erros</li>
+            </ul>
+        </div>
+
+        <div id="Tools" class="tabcontent">
+            <h2>Ferramentas de Estudo</h2>
+            <ul>
+                <li><a href="https://sourceforge.net/projects/orwelldevcpp/" target="_blank">Baixar Dev C++</a></li>
+                <li><a href="https://discord.com/" target="_blank">Baixar Discord</a></li>
+            </ul>
+        </div>
+
+        <div id="Online" class="tabcontent">
+            <h2>Consultas Online</h2>
+            <h3>Brevemente...</h3>
+        </div>
+
+        <div id="Exercises" class="tabcontent">
+            <h2>Exercícios</h2>
+            <h3>Brevemente...</h3>
+        </div>
+    </div>
+
+    <script>
+        // Abra a aba "Conteúdo" por padrão
+        document.getElementsByClassName("tablinks")[0].click();
+    </script>
+</body>
+
+</html>
